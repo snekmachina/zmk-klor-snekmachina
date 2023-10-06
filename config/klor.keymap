@@ -114,20 +114,20 @@ label= "LOWER"                                                 ;
 label= "RAISE"                                                 ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │         │         │         │                    │         │         │    Ü    │         │         │
+             │    Q    │    W    │    E    │    I    │ ADJUST  │                    │         │         │    Ü    │         │         │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │    Ä    │         │    ß    │         │         │         │                    │         │         │         │         │    Ö    │         │
+   │  SPACE  │    A    │    S    │    D    │    T    │         │                    │         │         │         │         │    Ö    │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │         ││        ││        ││         │         │         │         │         │         │
+   │    R    │    F    │    G    │    C    │    M    │         ││        ││        ││         │         │         │         │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │ ADJUST  │         │         │         ││         │         │         │         │  
+                                 │    1    │    2    │    3    │    4    ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-              &trans    &trans    &trans    &trans    &trans                         &trans    &trans    &kp RA(U) &trans    &trans     
-    &kp RA(A) &trans    &kp RA(S) &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &kp RA(O) &trans  
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                                  &mo ADJUST &trans   &trans    &trans     &trans    &trans    &trans    &trans  
+              &kp Q    &kp W    &kp E    &kp I    &mo ADJUST                         &trans    &trans    &kp RA(U) &trans    &trans     
+    &kp SPACE &kp A    &kp S    &kp D    &kp T    &trans                         &trans    &trans    &trans    &trans    &kp RA(O) &trans  
+    &kp R    &kp F    &kp G    &kp C    &kp M    &trans    &trans     &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                              &kp KP_N1 &kp KP_N2   &kp KP_N3    &kp KP_N4     &trans    &trans    &trans    &trans  
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
